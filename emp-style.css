@@ -1,0 +1,105 @@
+@media screen and (min-width: 1300px) {
+    .feed-posts .post {
+        padding: 0 50px;
+    }
+    .col-md-offset-2 {
+        margin-left: 120px;
+    }
+    .feed-sort-option {
+        float: left;
+        width: 450px;
+    }
+    .post-form {
+        float: right;
+        width: 650px;
+        margin-right: 50px;
+    }
+    .post-form-wrap {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .post-form form {
+        width: calc(100vw - 300px);
+        margin-right: 20px;
+        float: right;
+        margin-left: auto;
+    }
+    .feed > .container {
+        width: 1250px;
+        width: 100%;
+    }
+    .feed-posts .post:nth-of-type(2n+1) {
+        background-color: #ecf0f1;
+    }
+    .feed-posts .comments-count-wrap {
+        padding-top: 40px !important;
+        padding-left: 100px;
+        width: 190px;
+    }
+    .feed-posts .col-md-10 {
+        width: calc(100% - 200px);
+    }
+    .feed-posts .col-md-10 .col-md-2 {
+        width: 160px;
+    }
+    .feed-posts .media-image-link {
+        width: 90px;
+        height: 90px;
+    }
+    .feed-posts .actions {
+        position: absolute;
+        top: 3px;
+        left: -35px;
+    }
+    .feed-posts .post .votes {
+        padding-right: 0;
+    }
+    .feed-posts .votes > .vote {
+        width: 28px;
+        height: 50px;
+        display: block;
+    }
+    .feed-posts .votes > .vote > a,
+    .feed-posts .votes > .vote > span {
+        display: block;
+        height: 28px;
+        width: 28px;
+        text-align: center;
+        line-height: 28px;
+    }
+    .feed-posts .post-info {
+        width: calc(100% - 220px);
+    }
+    .feed-posts .post-title {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .navmenu-fixed-left {
+        display: block;
+    }
+    .navbar,
+    .headroom {
+        width: calc(100% - 300px);
+        right: 0;
+        left: 300px;
+    }
+    .nav-wrap .text-center {
+        padding-right: 150px;
+    }
+    .navbar-nav .btn-default {
+        display: none;
+    }
+    main {
+        width: calc(100% - 300px);
+        margin-right: 0px;
+        display: block;
+        float: right;
+    }
+    .post-form form {
+        width: calc(100vw - 600px);
+        margin-right: 20px;
+        float: right;
+        margin-left: auto;
+    }
+}

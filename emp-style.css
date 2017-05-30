@@ -1,7 +1,6 @@
+@-moz-document domain("empeopled.com") {
+/*Homepage css 1300px*/
 @media screen and (min-width: 1300px) {
-    .feed-posts .post {
-        padding: 0 50px;
-    }
     .col-md-offset-2 {
         margin-left: 120px;
     }
@@ -27,6 +26,9 @@
     .feed > .container {
         width: 1250px;
         width: 100%;
+    }
+    .feed-posts .post {
+        padding: 0 50px;
     }
     .feed-posts .post:nth-of-type(2n+1) {
         background-color: #ecf0f1;
@@ -73,7 +75,7 @@
     .feed-posts .post-title {
         font-size: 22px;
     }
-    .post .promote {
+    .feed-posts .post .promote {
         margin-left: 85px;
         width: calc(100% - 290px);
         height: 200px;
@@ -82,6 +84,104 @@
 }
 }
 
+/*Topic css 1300px*/
+@media screen and (min-width: 1300px) {
+    .topic > .container {
+        width: 100%;
+    }
+    .col-sm-offset-2 {
+        margin-left: 120px;
+    }
+    .topic-stickies .actions-row {
+        position: absolute;
+        top: -10px;
+        left: -240px;
+    }
+    .post .stickie-dtf {
+        right: 150px;
+    }
+    .topic-stickies {
+        background-color: #FAFAD2;
+        clear: both;
+    }
+    .topic-stickies .post {
+        background-color: #FAFAD2;
+    }
+    .post .stickie-hide-left,
+    .post .stickie-hide-right {
+        background-color: #FAFAD2;
+        display: none !important;
+    }
+    .topic-content .post,
+    .topic-stickies .post {
+        padding: 0 50px;
+    }
+    .topic-content .post:nth-of-type(2n+1) {
+        background-color: #ecf0f1;
+    }
+    .topic-content .comments-count-wrap,
+    .topic-stickies .comments-count-wrap {
+        padding-top: 40px !important;
+        padding-left: 100px;
+        width: 190px;
+    }
+    .topic-content .col-md-10,
+    .topic-stickies .col-md-10 {
+        width: calc(100% - 200px);
+    }
+    .topic-content .col-md-10 .col-md-2,
+    .topic-stickies .col-md-10 .col-md-2 {
+        width: 160px;
+    }
+    .topic-content .media-image-link,
+    .topic-stickies .media-image-link {
+        width: 90px;
+        height: 90px;
+    }
+    .topic-content .actions,
+    .topic-stickies .actions {
+        position: absolute;
+        top: 3px;
+        left: -35px;
+    }
+    .topic-content .post .votes,
+    .topic-stickies .post .votes {
+        padding-right: 0;
+    }
+    .topic-content .votes > .vote,
+    .topic-stickies .votes > .vote {
+        width: 28px;
+        height: 50px;
+        display: block;
+    }
+    .topic-content .votes > .vote > a,
+    .topic-content .votes > .vote > span,
+    .topic-stickies .votes > .vote > a,
+    .topic-stickies .votes > .vote > span {
+        display: block;
+        height: 28px;
+        width: 28px;
+        text-align: center;
+        line-height: 28px;
+    }
+    .topic-content .post-info,
+    .topic-stickies .post-info {
+        width: calc(100% - 220px);
+    }
+    .topic-content .post-title,
+    .topic-stickies .post-title {
+        font-size: 22px;
+    }
+    .topic-content .post .promote,
+    .topic-stickies .post .promote {
+        margin-left: 85px;
+        width: calc(100% - 290px);
+        height: 200px;
+        z-index: 100;
+    }
+}
+
+/*Homepage css 1600px*/
 @media screen and (min-width: 1600px) {
     .navmenu-fixed-left {
         display: block;
@@ -112,9 +212,11 @@
     }
 }
 
+/*Colors*/
 .offcanvas .list-group-item,
 .offcanvas {
     background-color: #1c343a;
+    border: 0px;
 }
 #search_form input {
     background-color: #48727c;

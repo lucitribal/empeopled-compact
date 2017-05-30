@@ -1,3 +1,4 @@
+@-moz-document domain("empeopled.com") {
 @media screen and (min-width: 1300px) {
     .feed-posts .post {
         padding: 0 50px;
@@ -73,7 +74,15 @@
     .feed-posts .post-title {
         font-size: 22px;
     }
+    .post .promote {
+        margin-left: 85px;
+        width: calc(100% - 290px);
+        height: 200px;
+        z-index: 100;
+    }
 }
+}
+
 @media screen and (min-width: 1600px) {
     .navmenu-fixed-left {
         display: block;
@@ -102,4 +111,19 @@
         float: right;
         margin-left: auto;
     }
+}
+
+.offcanvas .list-group-item,
+.offcanvas {
+    background-color: #1c343a;
+}
+#search_form input {
+    background-color: #48727c;
+}
+.xp-user {
+    background-color: #2d545e;
+    border-bottom: 2px #213d44 solid;
+}
+.offcanvas .list-group-item:hover {
+    background-color: #dcf1f7;
 }

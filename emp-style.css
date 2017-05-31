@@ -187,7 +187,7 @@
         padding-right: 130px;
     }
     .comments-wrap > .row > .comments{ padding-left: 165px;}
-    #panel > .container {
+    #panel > .container, .discussion-comments > .container {
         width: 100%;
     }
     .discussion-content .post .row .post-media-wrap,

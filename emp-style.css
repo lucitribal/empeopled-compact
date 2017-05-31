@@ -1,3 +1,4 @@
+
 /*Homepage css 1300px*/
 @media screen and (min-width: 1300px) {
     .col-md-offset-2 {
@@ -81,8 +82,6 @@
         z-index: 100;
     }
 }
-
-
 
 /*Topic css 1300px*/
 @media screen and (min-width: 1300px) {
@@ -180,6 +179,47 @@
         z-index: 100;
     }
 }
+
+/*Post css 1300px*/
+@media screen and (min-width: 1300px) {
+    .comments-wrap > .row > .comments, .comments-wrap > .row > .comment-form-0, .comments-wrap > .row > .comment-sort-option, .discussion-content .post > .row {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .comments-wrap > .row > .comments{ padding-left: 165px;}
+    #panel > .container {
+        width: 100%;
+    }
+    .discussion-content .post .row .post-media-wrap,
+    .discussion-content .post .row .full-body,
+    .discussion-content .post .row .full-body {
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .discussion-content .post .col-md-2 {
+        width: 100px;
+        padding-left: 0px;
+    }
+    .discussion-content .post-info .col-md-2 {
+        width: 160px;
+    }
+    .discussion-content .post-info .col-md-10 {
+        width: calc(100% - 160px);
+    }
+    .comment .comment-content {
+        max-width: 1200px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #panel > .container .discussion-content {
+        margin-left:300px;
+    }
+    .discussion-comments > .container {
+        margin-left: 300px;
+        width: calc(100% - 300px);
+    }
 }
 
 /*Homepage css 1600px*/
@@ -194,7 +234,7 @@
         left: 300px;
     }
     .nav-wrap .text-center {
-        padding-right: 150px;
+        padding-right: 130px;
     }
     .navbar-nav .btn-default {
         display: none;
@@ -211,8 +251,11 @@
         float: right;
         margin-left: auto;
     }
+}
 
 
+
+/*Extra*/
 
 @media screen and (min-width: 1600px) {
     #sidebar:after {
@@ -229,9 +272,60 @@
         border: 45px solid #2d545e;
         border-right: 0px;
         border-bottom: 0px;
-        z-index: 1;
+        z-index: 1;pointer-events: none;
     }
 }
+
+/*Comments*/
+.comment {
+    position: relative;
+    background-color:#ecf0f1;
+    border: 3px solid #ecf0f1;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border-right: 0px;
+    margin-right: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.comments > div > .comment > .expander-content > div > .children > .comment,
+.comments > div > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment,
+.comments > div > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment
+{    background-color: #f8f8f8; border-color: #f8f8f8;}
+
+.comments > div > .comment > .expander-content > div > .children > .comment > .expander > a,
+.comments > div > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander > a,
+.comments > div > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander-content > div > .children > .comment > .expander > a
+{    background-color: #f8f8f8; }
+
+.children{border: none !important;}
+
+.comment .expander-content {
+    width: 100%;
+}
+.comment .expander {
+    height: calc(100% + 6px);
+    width: 30px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: -32px;
+    top: -3px;
+}
+.comment .expander a {
+    color: #999;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #ecf0f1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    line-height: 55px;
+}
+.comment .expander a:hover{background-color:#2980b9 !important; color:#e1e1e1;}
+
 
 /*Colors*/
 .offcanvas .list-group-item,
@@ -256,7 +350,8 @@
 .navbar-default #mytopics,
 .navbar-default .caret,
 .navbar-default .fa-bell,
-.navbar-default .fa-envelope {
+.navbar-default .fa-envelope,
+.navbar-default .payout-rate-inline {
     color: rgba(241, 241, 241, 1);
 }
 .navbar-default .logo:hover h5,

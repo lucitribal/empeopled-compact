@@ -1,1 +1,340 @@
+/*Homepage css 1300px*/
+@media screen and (min-width: 1300px) {
+    .col-md-offset-2 {
+        margin-left: 120px;
+    }
+    .feed-sort-option {
+        float: left;
+        width: 450px;
+    }
+    .post-form {
+        float: right;
+        width: 650px;
+        margin-right: 50px;
+    }
+    .post-form-wrap {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .post-form form {
+        width: calc(100vw - 300px);
+        margin-right: 20px;
+        float: right;
+        margin-left: auto;
+    }
+    .feed > .container {
+        width: 1250px;
+        width: 100%;
+    }
+    .feed-posts .post {
+        padding: 0 50px;
+    }
+    .feed-posts .post:nth-of-type(2n+1) {
+        background-color: #ecf0f1;
+    }
+    .feed-posts .comments-count-wrap {
+        padding-top: 40px !important;
+        padding-left: 100px;
+        width: 190px;
+    }
+    .feed-posts .col-md-10 {
+        width: calc(100% - 200px);
+    }
+    .feed-posts .col-md-10 .col-md-2 {
+        width: 160px;
+    }
+    .feed-posts .media-image-link {
+        width: 90px;
+        height: 90px;
+    }
+    .feed-posts .actions {
+        position: absolute;
+        top: 3px;
+        left: -35px;
+    }
+    .feed-posts .post .votes {
+        padding-right: 0;
+    }
+    .feed-posts .votes > .vote {
+        width: 28px;
+        height: 50px;
+        display: block;
+    }
+    .feed-posts .votes > .vote > a,
+    .feed-posts .votes > .vote > span {
+        display: block;
+        height: 28px;
+        width: 28px;
+        text-align: center;
+        line-height: 28px;
+    }
+    .feed-posts .post-info {
+        width: calc(100% - 220px);
+    }
+    .feed-posts .post-title {
+        font-size: 22px;
+    }
+    .feed-posts .post .promote {
+        margin-left: 85px;
+        width: calc(100% - 290px);
+        height: 200px;
+        z-index: 100;
+    }
+}
 
+/*Topic css 1300px*/
+@media screen and (min-width: 1300px) {
+    .topic > .container, .topic-header .container {
+        width: 100%;
+    }
+    .col-sm-offset-2 {
+        margin-left: 120px;
+    }
+    .topic-stickies .actions-row {
+        position: absolute;
+        top: -10px;
+        left: -240px;
+    }
+    .post .stickie-dtf {
+        right: 150px;
+    }
+    .topic-stickies {
+        background-color: #FAFAD2;
+        clear: both;
+    }
+    .topic-stickies .post {
+        background-color: #FAFAD2;
+    }
+    .post .stickie-hide-left,
+    .post .stickie-hide-right {
+        background-color: #FAFAD2;
+        display: none !important;
+    }
+    .topic-content .post,
+    .topic-stickies .post {
+        padding: 0 50px;
+    }
+    .topic-content .post:nth-of-type(2n+1) {
+        background-color: #ecf0f1;
+    }
+    .topic-content .comments-count-wrap,
+    .topic-stickies .comments-count-wrap {
+        padding-top: 40px !important;
+        padding-left: 100px;
+        width: 190px;
+    }
+    .topic-content .col-md-10,
+    .topic-stickies .col-md-10 {
+        width: calc(100% - 200px);
+    }
+    .topic-content .col-md-10 .col-md-2,
+    .topic-stickies .col-md-10 .col-md-2 {
+        width: 160px;
+    }
+    .topic-content .media-image-link,
+    .topic-stickies .media-image-link {
+        width: 90px;
+        height: 90px;
+    }
+    .topic-content .actions,
+    .topic-stickies .actions {
+        position: absolute;
+        top: 3px;
+        left: -35px;
+    }
+    .topic-content .post .votes,
+    .topic-stickies .post .votes {
+        padding-right: 0;
+    }
+    .topic-content .votes > .vote,
+    .topic-stickies .votes > .vote {
+        width: 28px;
+        height: 50px;
+        display: block;
+    }
+    .topic-content .votes > .vote > a,
+    .topic-content .votes > .vote > span,
+    .topic-stickies .votes > .vote > a,
+    .topic-stickies .votes > .vote > span {
+        display: block;
+        height: 28px;
+        width: 28px;
+        text-align: center;
+        line-height: 28px;
+    }
+    .topic-content .post-info,
+    .topic-stickies .post-info {
+        width: calc(100% - 220px);
+    }
+    .topic-content .post-title,
+    .topic-stickies .post-title {
+        font-size: 22px;
+    }
+    .topic-content .post .promote,
+    .topic-stickies .post .promote {
+        margin-left: 85px;
+        width: calc(100% - 290px);
+        height: 200px;
+        z-index: 100;
+    }
+    .topic .post-form {
+        margin-bottom: 10px;
+    }
+    .topic .feed-sort-option {
+        padding-top: 40px;
+    }
+    .topic .topic-header .col-xs-2 {
+        width: 150px;
+    }
+    .topic .topic-header .col-xs-10 {
+        width: calc(100% - 150px);
+    }
+}
+
+/*Post css 1300px*/
+@media screen and (min-width: 1300px) {
+    .comments-wrap > .row > .comments, .comments-wrap > .row > .comment-form-0, .comments-wrap > .row > .comment-sort-option, .discussion-content .post > .row {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .comments-wrap > .row > .comments {
+        padding-left: 165px;
+    }
+    #panel > .container,
+    .discussion-comments > .container {
+        width: 100%;
+    }
+    .discussion-content .post .row .post-media-wrap,
+    .discussion-content .post .row .full-body,
+    .discussion-content .post .row .full-body {
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .discussion-content .post .col-md-2 {
+        width: 100px;
+        padding-left: 0px;
+    }
+    .discussion-content .post-info .col-md-2 {
+        width: 160px;
+    }
+    .discussion-content .post-info .col-md-10 {
+        width: calc(100% - 160px);
+    }
+    .comment .comment-content {
+        max-width: 1200px;
+    }
+    .comments-wrap .see-full-conversation {
+        margin-left: 130px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #panel > .container .discussion-content {
+        margin-left:300px;
+    }
+    .discussion-comments > .container {
+        margin-left: 300px;
+        width: calc(100% - 300px);
+    }
+}
+
+/*Homepage css 1600px*/
+@media screen and (min-width: 1600px) {
+    .navmenu-fixed-left {
+        display: block;
+    }
+    .navbar,
+    .headroom {
+        width: calc(100% - 300px);
+        right: 0;
+        left: 300px;
+    }
+    .nav-wrap .text-center {
+        padding-right: 130px;
+    }
+    .navbar-nav .btn-default {
+        display: none;
+    }
+    main {
+        width: calc(100% - 300px);
+        margin-right: 0px;
+        display: block;
+        float: right;
+    }
+    .post-form form {
+        width: calc(100vw - 600px);
+        margin-right: 20px;
+        float: right;
+        margin-left: auto;
+    }
+}
+
+/*DTF css 1300px + 1600px*/
+@media screen and (min-width: 1300px) {
+    .govern>.container > div {
+        width:49%;
+        display: inline-block;
+        height: 160px;
+        padding: 0;
+    }
+    .govern > .container > div > div {
+        padding: 0;
+    }
+    .govern > .container,
+    .govern-header > .container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .govern .col-lg-9 {
+        width: calc(100% - 110px);
+    }
+    .govern .col-md-2 {
+        width: 110px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .govern .col-md-2 img {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .govern .row {
+        margin: 0px;
+    }
+    .govern h3 {
+        font-size: 28px !important;
+    }
+    .govern p {
+        font-size: 24px !important;
+    }
+    .govern .govern-icon {
+        font-size: 120px;
+    }
+}
+
+/*Discover css 1300px + */
+@media screen and (min-width: 1300px) {
+    .discover>.container, .discover>.section-header>.row>.container {
+        width:100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .discover-topic .topic-wrap {
+        width: auto;
+    }
+    .discover-topic {
+        width: 33%;
+        display: inline-block;
+    }
+}
+@media screen and (min-width: 2050px) {
+    .discover-topic {
+        width:25%;
+    }
+}
+@media screen and (min-width: 2500px) {
+    .discover-topic {
+        width:20%;
+    }
+}

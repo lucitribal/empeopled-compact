@@ -204,7 +204,7 @@
     .discussion-comments > .container {
         width: 100%;
     }
-    .discussion-content .post .row .post-media-wrap,
+    
     .discussion-content .post .row .full-body,
     .discussion-content .post .row .full-body {
         width: 100%;
@@ -212,6 +212,14 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+    .discussion-content .post .row .post-media-wrap{
+        margin-left: 0; margin-right:0;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    
+    
     .discussion-content .post .col-md-2 {
         width: 100px;
         padding-left: 0px;
@@ -228,6 +236,8 @@
     .comments-wrap .see-full-conversation {
         margin-left: 130px;
     }
+    a.comment-live{margin-left:120px;}
+    
 }
 @media screen and (min-width: 1600px) {
     #panel > .container .discussion-content {
@@ -338,6 +348,8 @@
         width:20%;
     }
 }
+
+
 
 /*Extra*/
 @media screen and (min-width: 1600px) {
